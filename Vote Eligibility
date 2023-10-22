@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter your age: ");
+    scanf("%d",&n);
+    if(n>18){
+        char c;
+        printf("Enter your gender: ");
+        scanf(" %c",&c);
+        if(c=='M'){
+            printf("You are eigible for vote Male");
+        }
+        else if(c=='F'){
+            printf("You are eligible for vote Female");
+        } 
+    }
+    if(n<18){
+        if(n<=0){
+            printf("Enter valid input");
+        }
+        else{
+            char c;
+            printf("Enter your gender: ");
+            scanf(" %c",&c);
+            if(c=='M'){
+                printf("You are not eligible for vote Male");
+            }
+            else if(c=='F'){
+                printf("You are not eligible for vote Female");
+            }    
+        }
+     }
+    return 0;
+}
