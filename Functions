@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+   void sayhi(int age,char g){
+       printf("Hi, %d years man\n",age);
+       printf("Welcome\n");
+       printf("Nice to know you are %c\n",g);
+   }
+   sayhi('f','f');
+   sayhi(18,'m');
+   sayhi(13,'f');
+   sayhi(18,'f');
+   sayhi(23,'m');
+   sayhi(17,'f');
+   sayhi(50,'f');
+   sayhi(55,'m');
+   sayhi(80,'f');
+   sayhi(7,'f');
+}
