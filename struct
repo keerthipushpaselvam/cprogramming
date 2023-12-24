@@ -1,0 +1,78 @@
+#include<stdio.h>
+
+struct employee{
+    char name[50];
+    int age;
+    int salary;
+};
+
+// void employeeKaatubavan(struct employee);
+void printStr(struct employee*);
+
+int main(){
+
+    struct employee emp1 = {"Ram",45,3455};
+    // struct employee emp2 = {"Raj",43,2455};
+    // printf("Enter the name, age and salary: ");
+    // scanf("%s",e1.name);
+    // scanf("%d",&e1.age);
+    // scanf("%d",&e1.salary);
+    // e2 = {"Raj",35,3465};
+    // struct employee e2;
+    // struct employee e3;
+    // typedef struct employee empl;
+    // // emp e2 = {"Kiran",43,2343};
+    // empl emp2 = {"Raj",32,3423};
+    // empl emp3 = {"Ravi",12,2342};
+    // empl e[3] = {emp1,emp2,emp3};
+    // e[0] = emp1;
+    // e[1] = emp2;
+    // e[2] = emp3;
+
+    // struct employee *p;
+    // p = &emp1;
+
+    // scanf("%s %d %d",e1.name,&e1.age,&e1.salary);
+
+    // printf("%s\n",(*p).name);
+    // printf("%d\n",(*p).age);
+    // printf("%d\n",(*p).salary);
+
+    // printf("%s\n",p->name);   
+    // printf("%d\n",p->age);    
+    // printf("%d\n",p->salary); 
+    // printf("%s\n",emp1.name);
+    // printf("%d\n",emp1.age);
+    // printf("%d\n",emp1.salary);
+    // printf("%s\n",e2.name);
+    // printf("%d\n",e2.age);
+    // printf("%d\n",e2.salary);
+
+    struct employee *p;
+    p = &emp1;
+
+    printStr(&emp1);
+    // printStr(emp2);
+
+    // printf("%s\n",e[0].name);
+    // printf("%d\n",e[1].age);
+    // printf("%d\n",e[2].salary);
+    
+    // printf("%d\n",e1.age);
+    // printf("%d\n",e1.salary);
+
+    return 0;
+
+}
+
+// void employeeKaatubavan(struct employee e){
+//     printf("%s\n",e.name);
+//     printf("%d\n",e.age);
+//     printf("%d\n",e.salary);
+// }
+
+void printStr(struct employee *poi){
+    printf("%s\n",poi->name);
+    printf("%d\n",poi->age);
+    printf("%d\n",poi->salary);
+}
